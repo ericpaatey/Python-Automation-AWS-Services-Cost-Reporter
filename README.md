@@ -1,29 +1,17 @@
-# ECS Log Analyzer – DevOps Build Lab
+# Python Automation Script: AWS Services Cost Reporter
 
-This project demonstrates a fully automated AWS deployment pipeline using:
+This Script retrieves cost data and groups by AWS services.
 
-- Terraform (Infrastructure as Code)
-- Docker (Application packaging)
-- GitHub Actions (CI/CD)
-- Amazon ECR (Container registry)
-- ECS Fargate (Container runtime)
-- Application Load Balancer (Traffic routing)
-- CloudWatch (Logging)
+### Use Cases:
+This script is useful for 
+ - Understanding spending trends
+ - Identifying expensive services
+ - Enabling cost accountability
 
-The sample application is a Log Analyzer API developed in Python to process log files and identify error patterns, warnings, and service hotspots.
+### Usage:
 
-## Architecture
+python3 cost_reporter.py
 
-Terraform provisions:
+### Architecture Diagram
 
-- VPC
-- Subnets
-- Application Load Balancer
-- ECS Cluster
-- ECS Service
-- IAM Roles
-- CloudWatch Log Groups
-
-CI/CD Pipeline:
-
-GitHub Actions builds the container image and pushes it to ECR automatically on every commit.
+![Python-Automation-for-Idle-Cloud-Resource-Cleanup](architecture/diagram.jpg)
